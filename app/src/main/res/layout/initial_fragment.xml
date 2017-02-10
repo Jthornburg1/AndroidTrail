@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/initial_fragment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/lighter_orange"
+        android:layout_margin="@dimen/toolbar_margin">
+
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="@dimen/button_side_length"
+            android:layout_height="@dimen/button_side_length"
+            android:background="@drawable/gear"
+            android:layout_marginRight="@dimen/button_side_length"/>
+
+        <EditText
+            android:id="@+id/initial_fragment_edittext"
+            android:layout_width="@dimen/edit_text_width"
+            android:layout_height="@dimen/edit_text_height"
+            android:hint="@string/edit_text_hint"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorHintGrey"/>
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="@dimen/button_side_length"
+            android:layout_height="@dimen/button_side_length"
+            android:layout_marginLeft="@dimen/button_side_length"
+            android:background="@drawable/add_pic"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/initial_view_recyclerview"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
